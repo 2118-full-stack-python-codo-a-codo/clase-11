@@ -17,6 +17,8 @@ let tieneEdadMinima = (myEdad >= EDAD_MINIMA); // Uso el operador > para compara
 if( !tieneEdadMinima  ) { // if ( condition ) si la condicion es verdadera pasa sino no.
     alert("Sos Menor, no podes ingresar");
     document.location = "../index.html"; // Te vas al index.html
+} else {
+    alert("Bienvenido!");
 }
 
 let myInputNumber = parseInt(prompt("Ingrese un Numero"));
@@ -33,3 +35,13 @@ console.log(myInputNumber<<1); // Multiplicar por dos
 // Si lo divido / 2 esto se convierte a decimal...
 
 // 7 en binario es 0111
+
+// Si divido 15 / 2 ... es 7 + 1 de resto...
+
+console.log("El resto es: " + myInputNumber%2);
+
+let esPar = ( (myInputNumber%2) == 0 )? true:false;
+
+if(esPar) {
+    alert("El numero elegido es Par");
+}
